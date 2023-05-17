@@ -20,6 +20,7 @@ public class Order implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private Instant moment;
+	
 
 	@ManyToOne
 	@JoinColumn(name = "client_id")
